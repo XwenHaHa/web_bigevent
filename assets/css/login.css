@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/markus-spiske-FXFz-sW0uwo-unsplash.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.loginAndRegBox {
+    width: 400px;
+    /* 不给高度让内容自行撑开 */
+    /* height: 450px; */
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px #ccc;
+    overflow: hidden;
+}
+
+.title_box {
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    /* background-color: #2CA5FF; */
+}
+
+.reg_box {
+    display: none;
+}
+
+.layui-form {
+    padding: 20px 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #AEAEAD;
+}
+
+.layui-input {
+    padding-left: 32px !important;
+}
+
+.layui-form-item input {
+    background-color: transparent;
+}
+
+.layui-icon {
+    color: #fff !important;
+}
+
+.layui-btn {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Mozilla Firefox 4 to 18 */
+
+input:-moz-placeholder {
+    color: #C0C0C0;
+    opacity: 1;
+    font-size: 14px;
+}
+
+/* Mozilla Firefox 19+ */
+
+input::-moz-placeholder {
+    color: #C0C0C0;
+    opacity: 1;
+    font-size: 14px;
+}
+
+/* Internet Explorer 10+ */
+
+input:-ms-input-placeholder {
+    color: #C0C0C0;
+    font-size: 14px;
+}
