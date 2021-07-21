@@ -58,7 +58,7 @@ $(function () {
                 layer.msg('更新头像成功!');
                 // 调用父接口重新渲染头像
                 window.parent.getUserinfo();
-            }
+            }   
         })
     })
 })

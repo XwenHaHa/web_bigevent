@@ -1,0 +1,23 @@
+/* 文章类别样式 */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #ccc;
+}
+
+.layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#formadd,
+#formedit {
+    padding-top: 20px;
+    padding-right: 30px;
+}
