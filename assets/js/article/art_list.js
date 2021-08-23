@@ -36,7 +36,7 @@ $(function () {
             url: '/my/article/list',
             data: q,
             success: function (res) {
-                // console.log(res);
+                console.log(res);
                 if (res.status !== 0) {
                     return layer.msg('获取文章列表失败！');
                 }
@@ -54,11 +54,14 @@ $(function () {
             method: 'GET',
             url: '/my/article/cates',
             success: function (res) {
+                // console.log('这里是初始化文章分类');
+                // console.log(res);
                 if (res.status !== 0) {
                     return layer.msg('获取文章分类列表失败！');
                 }
                 // 调用模板引擎渲染分类的可选项
                 var htmlStr = template('tpl-cate', res);
+                // console.log(htmlStr);
                 $('[name=cate_id]').html(htmlStr);
                 // 通过layui重新渲染表单的UI结构
                 form.render();
@@ -70,10 +73,10 @@ $(function () {
         e.preventDefault();
         // 获取表单中选项的值
         var cate_id = $('[name=cate_id]').val();
-        var state = $('[name=status]').val();
+        var state = $('[name=state]').val();
         // 为查询对象q中对应的属性赋值
         q.cate_id = cate_id;
-        q.status = status;
+        q.state = state;
         // 根据最新的筛选条件渲染表格
         initTable();
     })
